@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Women's Football Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">
+      <span class="wordmark">Women's Football Hub</span>
+      <span class="demo-pill" title="Scores, fixtures and tables are placeholders">Demo data</span>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button type="button" id="tab-matches" role="tab" aria-selected="true" aria-controls="view-matches" data-view="matches">Matches <span class="live-count" id="live-count" hidden></span></button>
+      <button type="button" id="tab-tables" role="tab" aria-selected="false" aria-controls="view-tables" data-view="tables">Tables</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap page">
+  <section id="view-matches" class="view" role="tabpanel" aria-labelledby="tab-matches">
+    <div class="days" id="days" role="group" aria-label="Match day"></div>
+    <div class="chips" id="league-chips" role="group" aria-label="Filter by league"></div>
+    <div id="match-list" class="stack"></div>
+  </section>
+
+  <section id="view-tables" class="view" role="tabpanel" aria-labelledby="tab-tables" hidden>
+    <div class="chips" id="table-chips" role="group" aria-label="Choose league"></div>
+    <div id="table-card"></div>
+  </section>
+</main>
+
+<footer class="wrap site-footer">
+  <p>Demo data. Clubs are real; every score, scorer, kick-off time and table position is a placeholder until a match data provider is connected. Times are shown in your local time zone.</p>
+</footer>
+
+<script src="js/demo-data.js"></script>
+<script src="js/data-source.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
