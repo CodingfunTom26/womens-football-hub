@@ -41,6 +41,7 @@ Open `index.html` in a web browser. No installation needed.
 | `js/demo-data.js` | Placeholder leagues, teams, matches and tables |
 | `js/data-source.js` | Data layer: the only file to change when connecting a real API |
 | `js/app.js` | Draws the matches and tables pages |
+| `images/flags/` | League country flags ([flag-icons](https://github.com/lipis/flag-icons), MIT licence) |
 
 ## Roadmap
 

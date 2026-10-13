@@ -17,12 +17,12 @@
 
 window.DEMO_DATA = {
   leagues: [
-    { id: "wsl",  name: "Women's Super League", code: "ENG", country: "England" },
-    { id: "ligaf", name: "Liga F", code: "ESP", country: "Spain" },
-    { id: "fbl",  name: "Frauen-Bundesliga", code: "GER", country: "Germany" },
-    { id: "fra",  name: "Première Ligue", code: "FRA", country: "France" },
-    { id: "ita",  name: "Serie A Femminile", code: "ITA", country: "Italy" },
-    { id: "nwsl", name: "NWSL", code: "USA", country: "United States" }
+    { id: "wsl",  name: "Women's Super League", code: "ENG", flag: "gb-eng", country: "England" },
+    { id: "ligaf", name: "Liga F", code: "ESP", flag: "es", country: "Spain" },
+    { id: "fbl",  name: "Frauen-Bundesliga", code: "GER", flag: "de", country: "Germany" },
+    { id: "fra",  name: "Première Ligue", code: "FRA", flag: "fr", country: "France" },
+    { id: "ita",  name: "Serie A Femminile", code: "ITA", flag: "it", country: "Italy" },
+    { id: "nwsl", name: "NWSL", code: "USA", flag: "us", country: "United States" }
   ],
 
   teams: {
