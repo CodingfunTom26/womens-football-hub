@@ -29,10 +29,14 @@
 
   function leagueHead(l, extra = "") {
     return `<header class="league-head">
-      <span class="league-code">${esc(l.code)}</span>
+      ${flag(l)}
       <h2 class="league-name">${esc(l.name)}</h2>
       ${extra}
     </header>`;
+  }
+
+  function flag(l) {
+    return `<img class="flag" src="images/flags/${l.flag}.svg" alt="${esc(l.country)}" title="${esc(l.country)}">`;
   }
 
   function crest(t) {
@@ -57,7 +61,7 @@
     const items = [{ id: "all", name: "All leagues" }, ...leagues];
     $("#league-chips").innerHTML = items.map(l =>
       `<button type="button" class="chip" data-league="${l.id}" aria-pressed="${state.league === l.id}">
-        ${l.code ? `<span class="chip-code">${esc(l.code)}</span>` : ""}${esc(l.name)}
+        ${l.flag ? flag(l) : ""}${esc(l.name)}
       </button>`).join("");
   }
 
@@ -161,7 +165,7 @@
   function renderTableChips() {
     $("#table-chips").innerHTML = leagues.map(l =>
       `<button type="button" class="chip" data-table="${l.id}" aria-pressed="${state.tableLeague === l.id}">
-        <span class="chip-code">${esc(l.code)}</span>${esc(l.name)}
+        ${flag(l)}${esc(l.name)}
       </button>`).join("");
   }
 
